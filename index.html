@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -10,13 +10,14 @@
             padding: 0;
             border: 0;
             height: 100vh;
+            width: 100vw;
             display: flex;
             background-color:
                 rgb(250, 249, 222);
         }
 
         * {
-            font-family: Arial, Helvetica, sans-serif, "微软雅黑"
+            font-family: Arial, Helvetica, sans-serif, "微软雅黑";
         }
 
         .ma8 {
@@ -81,13 +82,24 @@
             word-wrap: break-word;
             word-break: break-all;
         }
+
+        @media (max-width:600px) {
+            #Sidebar {
+                display: none;
+            }
+
+            #RightArea {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- 侧边栏 -->
-    <div style="width: 200px;z-index: 2;" class="white br bs ma8">
+    <!-- 侧边栏Sidebar -->
+    <div id="Sidebar" style="width: 175px;z-index: 2;" class="white br bs ma8">
         <div style="flex-direction: row;height: 50px;" class="flex white br bs ma8 jc-c ai-c">
+            <img src="./p.png" alt="photo" class="bs img">
             <h2>&ensp;秘密基地</h2>
         </div>
         <div style="flex-direction: row;height: 50px;" class="flex white br bs ma8 jc-c ai-c">
@@ -100,36 +112,50 @@
     <!-- 主区域 -->
     <div class="flex column flex1 white">
         <!-- 头部兰 -->
-        <div class="white br bs ma8 flex center" style="height: 60px;z-index: 1;">
-            <h1>Hallo Welt! Setzen Sie die Segel für die Zukunft!</h1>
+        <div class="white br bs ma8 flex center" style="width: auto; height: auto;z-index: 1;">
+            <h1 class="ma8">Hallo Welt! Setzen Sie die Segel für die Zukunft!</h1>
         </div>
         <!-- 内容区 -->
         <div style="overflow: auto;" class="flex1 flex white">
             <!-- 左区 -->
-            <div style="flex: 4;" class="ma8 white bs flex column br">
-                <p style="font-size: 24px;margin-left: 9px;margin-top: 9px;font-style: italic;" class="wb">
-                    Hello! Welcome to here!<br>
-                    I am a 14-year-old student from Poyang(鄱阳), Jiangxi(江西) province.<br>
-                    I take extremely delight in programming, and I have a dream, get a great job about programming and
-                    contribute
-                    to
-                    the world by programming.<br>
-                    In my opinion, programming is exceedingly useful and the most magical.<br>
-                    <strong>If you also love programming, could you make friends with me?</strong><br>
-                    QQ: 2511380370<br>
-                    E-Mail: 2511380370@qq.com<br>
-                    Bilibili:<a href="https://space.bilibili.com/513777730">Click Here</a>
+            <div style="flex: 4;overflow: auto;width: auto; height: auto;">
+                <div style="width: auto; height: auto;overflow: auto;" class="ma8 white bs flex column br">
+                    <p style="font-size: 24px;font-style: italic;" class="wb ma8">
+                        Hello! Welcome to here!<br>
+                        I am a 14-year-old student from Poyang(鄱阳), Jiangxi(江西) province.<br>
+                        I take extremely delight in programming, and I have a dream, get a great job about programming
+                        and
+                        contribute
+                        to
+                        the world by programming.<br>
+                        In my opinion, programming is exceedingly useful and the most magical.<br>
+                        <strong>If you also love programming, could you make friends with me?</strong><br>
+                        QQ: 2511380370<br>
+                        E-Mail: 2511380370@qq.com<br>
+                        Bilibili:<a href="https://space.bilibili.com/513777730">Click Here</a>
 
-                </p>
+                    </p>
+                </div>
+                <div style="width: auto; height: auto;overflow: auto;" class="ma8 white bs flex column br">
+                    <p style="font-size: 24px;font-style: italic;" class="wb ma8">
+                        114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>114514<br>
+                    </p>
+                </div>
+                <div style="width: auto; height: auto;overflow: auto;" class="ma8 white bs flex column br">
+                    <p style="font-size: 24px;font-style: italic;" class="wb ma8">
+                        look
+                    </p>
+                </div>
             </div>
-            <!-- 右区 -->
-            <div style="flex: 1;" class="ma8 white flex column br bs">
 
-                <h3 style="align-self:center;;overflow: hidden;" class="black wb">
+            <!-- 右区 -->
+            <div id="RightArea" style="width: auto; height: auto;" class="ma8 white flex column br bs">
+
+                <h3 style="align-self:center" class="black wb">
                     《无将大车》<br>
                     佚名 〔先秦〕
                 </h3>
-                <p style="align-self:center;margin: 0;padding: 0;overflow: hidden;" class="black wb">
+                <p style="flex:1;justify-content: center;align-self:center;margin: 0;padding: 0" class="black wb">
                     无将大车，祇自尘兮。<br>
                     无思百忧，祇自疧兮。<br>
                     无将大车，维尘冥冥。<br>
@@ -137,8 +163,8 @@
                     无将大车，维尘雍兮。<br>
                     无思百忧，祇自重兮。<br><br>
                 </p>
-                <h3 style="align-self:center;margin: 0;padding: 0;overflow: hidden;" class="black">释义</h3>
-                <p style="align-self:center;margin: 0;overflow: hidden;margin: 0;padding: 0;" class="black wb">
+                <h3 style="flex:1;justify-content: center;align-self:center;margin: 0;padding: 0" class="black">释义</h3>
+                <p style="flex:4;justify-content: center;align-self:center;padding: 0;margin: 0" class="black wb">
                     勿推沉重车，只会落得一身尘<br>
                     莫想愁心事，只会痛苦惹上身<br>
                     勿推沉重车，尘土遮空灰蒙蒙<br>
