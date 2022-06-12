@@ -26,11 +26,31 @@
 
         a {
             text-decoration: none;
-            color: #4b5cc4;
+            color: hsl(232, 22%, 34%);
+        }
+
+        .aw:hover {
+            color: white;
+        }
+
+        .ab {
+            color: hsl(197, 22%, 34%);
+        }
+
+        .ab:hover {
+            color: rgb(0, 132, 255);
         }
 
         .black {
             color: hsl(232, 22%, 34%);
+        }
+
+        .bblack {
+            color: hsla(232, 22%, 34%, 0.5);
+        }
+
+        .reply {
+            background-color: hsla(58, 0%, 74%, 0.1)
         }
 
         .white {
@@ -93,25 +113,38 @@
                 display: none;
             }
         }
+
+        .btn {
+            text-align: center;
+            text-justify: center;
+            padding: 0;
+            border: 0;
+        }
+
+        .btn:hover {
+            background-color: #008CBA;
+        }
     </style>
 </head>
 
 <body>
     <!-- 侧边栏Sidebar -->
     <div id="Sidebar" style="width: 175px;z-index: 2;" class="white br bs ma8">
-        <div style="flex-direction: row;height: 50px;" class="flex white br bs ma8 jc-c ai-c">
+        <div style="flex-direction: row;height: 50px;" class="flex flex1 white br bs ma8 jc-c ai-c">
             <img src="avatar.png" alt="photo" class="bs img">
             <h2 class="black">&ensp;秘密基地</h2>
         </div>
-        <div style="flex-direction: row;height: 50px;" class="flex white br bs ma8 jc-c ai-c">
-            <h2 class="black"><a href="">》首页《</a></h2>
-        </div>
-        <div style="flex-direction: row;height: 50px;" class="flex white br bs ma8 jc-c ai-c">
-            <h2 class="black">None</h2>
-        </div>
-        <div style="flex-direction: row;height: 50px;" class="flex white br bs ma8 jc-c ai-c">
-            <h2 class="black">下面暂未施工</h2>
-        </div>
+        <a href="index.html" style="flex-direction: row;height: 50px;"
+            class="flex flex1 white br bs ma8 jc-c ai-c btn black aw">
+            <h2>》首页《</h2>
+        </a>
+        <a href="try.html" style="flex-direction: row;height: 50px;"
+            class="flex flex1 white br bs ma8 jc-c ai-c btn black aw">
+            <h2>猫站破迷</h2>
+        </a>
+        <a href="" style="flex-direction: row;height: 50px;" class="flex flex1 white br bs ma8 jc-c ai-c btn black aw">
+            <h2>下面暂未施工</h2>
+        </a>
     </div>
     <!-- 主区域 -->
     <div class="flex column flex1">
@@ -135,18 +168,31 @@
                         QQ: 2511380370<br>
                         E-Mail: 2511380370@qq.com<br>
 
-                        Bilibili:<a href="https://space.bilibili.com/513777730">Click
+                        Bilibili:<a href="https://space.bilibili.com/513777730" class="ab">Click
                             Here</a><br>
-                    <div style="width: auto; height: auto;overflow: auto;background-color: rgb(238,237,237);"
-                        class="ma8 bs flex column br">
-                        <h3 class="ma8 black">Re: No Name</h3>
-                        <h4 class="ma8 black">[photo.png] Admin 29 Aug 2022, 17:15</h4>
-                        <p class="ma8 black">由于条目的分数为-7分，现根据删帖指导，宣告将删除此页：</p>
-                        <iframe src="http://aelanna.com/Tools/deletion-time.html?timestamp=1655400571279&type=0 "
-                            frameborder="0" class="ma8" style="width: 400px; height: 50px;"></iframe>
-                        <p class="ma8 black">
-                            如果你不是作者又想要重写该条目，请在此帖回复申请。请先取得作者（或管理员，如果此文档搬运自论坛的话）的同意，并将原文的源代码复制至沙盒里。除非你是工作人员，否则请勿就申请重写以外的范围回复此帖
-                        </p>
+                    <div style="width: auto; height: auto;overflow: auto;" class="ma8 bs flex column br reply">
+                        <h3 class="ma8 black">到此一游</h3>
+                        <h4 class="ma8 black">FakeRaply005 <time class="bblack">2022.6.11 17:15</time>
+                        </h4>
+                        <p class="ma8 black">HELLO WORLD!</p>
+                        <div style="width: auto; height: auto;overflow: auto;" class="ma8 bs flex column br reply">
+                            <h3 class="ma8 black">我也到此一游</h3>
+                            <h4 class="ma8 black">FakeReply009 <time class="bblack">2022.6.11 19:24</time>
+                            </h4>
+                            <p class="ma8 black">请输入内容</p>
+                            <div style="width: auto; height: auto;overflow: auto;" class="ma8 bs flex column br reply">
+                                <h3 class="ma8 black">哈哈</h3>
+                                <h4 class="ma8 black">FakeReply011 <time class="bblack">2022.6.11 21:28</time>
+                                </h4>
+                                <p class="ma8 black">没有内容</p>
+                            </div>
+                            <div style="width: auto; height: auto;overflow: auto;" class="ma8 bs flex column br reply">
+                                <h3 class="ma8 black">再来看看</h3>
+                                <h4 class="ma8 black">FakeReply009 <time class="bblack">2022.6.11 22:53</time>
+                                </h4>
+                                <p class="ma8 black">请不要输入内容</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -158,17 +204,23 @@
                 </div>
                 <div style="width: auto; height: auto;overflow: auto;" class="ma8 white bs flex column br">
                     <p style="font-size: 24px;" class="wb ma8 black">
-                        <a href="https://www.bilibili.com/video/BV1AF411s78P">全B站最厉害的建网站教程</a>
+                        <a href="https://www.bilibili.com/video/BV1AF411s78P" class="ab">全B站最厉害的建网站教程</a>
                     </p>
                 </div>
                 <div style="width: auto; height: auto;overflow: auto;" class="ma8 white bs flex column br">
                     <p style="font-size: 24px;" class="wb ma8 black">
-                        <a href="https://www.bilibili.com/video/BV1GJ411x7h7">=谨防电信诈骗=</a><br>
-                        <a href="https://www.bilibili.com/video/BV1AK411g7xc">=小心移动支付=</a><br>
-                        <a href="https://www.bilibili.com/video/BV1iK4y1W7uD">=违法集资勿入=</a><br>
-                        <a href="https://www.bilibili.com/video/av170001?vd_source=821a21d2648f61ab506dfc3c38f34061">=做好安全防护=</a><br>
-                        <a href="http://cyberpolice.mps.gov.cn/wfjb/">[ 举报单击此处 ]</a>
+                        <a href="https://www.bilibili.com/video/BV1GJ411x7h7" class="ab">=谨防电信诈骗=</a><br>
+                        <a href="https://www.bilibili.com/video/BV1AK411g7xc" class="ab">=小心移动支付=</a><br>
+                        <a href="https://www.bilibili.com/video/BV1iK4y1W7uD" class="ab">=违法集资勿入=</a><br>
+                        <a href="https://space.bilibili.com/315523348/video" class="ab">=做好安全防护=</a><br>
+                        <a href="http://cyberpolice.mps.gov.cn/wfjb/" class="ab">[ 举报单击此处 ]</a>
                     </p>
+                    <div style="width: auto; height: auto;overflow: auto;" class="ma8 bs flex column br reply">
+                        <h3 class="ma8 black">你被骗了</h3>
+                        <h4 class="ma8 black">FakeReply004 <time class="bblack">2022.6.11 16:24</time>
+                        </h4>
+                        <p class="ma8 black">前三个链接分别是Rick Roll，竹节虫和印尼宽带</p>
+                    </div>
                 </div>
             </div>
 
