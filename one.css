@@ -1,0 +1,169 @@
+div,
+p,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: -apple-system,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "WenQuanYi Micro Hei",
+        微软雅黑,
+        "Microsoft Yahei",
+        sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #eee;
+}
+
+.br {
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a {
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.self-center {
+    align-self: center;
+    justify-self: center;
+}
+
+.items-center {
+    justify-content: center;
+    /*水平居中*/
+    align-items: Center;
+    /*垂直居中*/
+}
+
+.top {
+    list-style: none;
+    align-items: Center;
+    font-size: 20px;
+}
+
+.mar12 {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.tiezi_title {
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.bs {
+    box-shadow: 0px 0px 10px rgba(59, 59, 58, 0.14);
+}
+
+.img {
+    margin-top: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.ma8 {
+    margin: 8px 8px 8px 8px;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(232, 22%, 34%);
+}
+
+.aw:hover {
+    color: white;
+}
+
+.ab {
+    color: hsl(197, 22%, 34%);
+}
+
+.ab:hover {
+    color: rgb(0, 132, 255);
+}
+
+.black {
+    color: hsl(232, 22%, 34%);
+}
+
+ul>li {
+    color: #1891ac;
+}
+
+.bblack {
+    color: hsla(232, 22%, 34%, 0.5);
+}
+
+.reply {
+    background-color: hsla(0, 0%, 0%, 0.01);
+}
+
+.white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.tiezi {
+    margin-bottom: 8px;
+}
+
+#NeiRong {
+    border-radius: 5px;
+    margin-top: 14px;
+    flex: 1;
+    background-color: #fff;
+    width: 75vw;
+    height: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+@media (max-width:640px) {
+    #NeiRong {
+        width: 90vw;
+    }
+}
