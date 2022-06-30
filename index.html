@@ -15,17 +15,55 @@
     <div class="flex row bs" style="height: 60px;background-color: #fff;">
         <div class="flex row">
             <ul class="flex row top">
-                <li class="flex mar12"><img src="avatar.webp" alt="p" class="bs img"></li>
-                <li class="flex mar12 items-center">
-                    <a href="index.html">首页</a>
-                </li>
-                <li class="flex mar12 items-center"><a href="dili.html">地理</a></li>
-                <li class="flex mar12 items-center"><a href="shengwu.html">生物</a></li>
+                <li class="flex mar12 black items-center"><img src="avatar.webp" alt="p" class="bs img"></li>
+                <li class="flex mar12 black items-center"><a href="index.html">首页</a></li>
+                <li class="flex mar12 black items-center"><a href="dili.html">地理</a></li>
+                <li class="flex mar12 black items-center"><a href="shengwu.html">生物</a></li>
+                <li class="flex mar12 black items-center"><a href="try.html">测试页</a></li>
+                <div id="Head_bar">
+                    <li class="flex mar12 black items-center"><a href="##">None</a></li>
+                    <!-- 这里放一些移动端关闭的内容 -->
+                </div>
+                <div id="Head_bar1">
+                    <!-- 这里放一些移动端关闭的内容 -->
+                    <li class="flex mar12 black items-center">···</li>
+                </div>
             </ul>
         </div>
     </div>
-    <!-- 底部内容区 -->
+
+    <div style="display: flex;flex-direction: column;">
+        <label id='wrap' class="top-nav" for='sidemenu'>≡</label>
+    </div><!-- 底部内容区 -->
     <div class="flex column self-center bs" id="NeiRong">
+        <input type='checkbox' id='sidemenu'>
+        <aside class="top-nav">
+            <h2>主菜单</h2>
+            <br>
+            <ul id="sideul">
+                <a href="index.html">
+                    <li>首页</li>
+                </a>
+                <a href="dili.html">
+                    <li>地理</li>
+                </a>
+                <a href="shengwu.html">
+                    <li>生物</li>
+                </a>
+                <a href="try.html">
+                    <li>测试页</li>
+                </a>
+                <a href="##">
+                    <li>None</li>
+                </a>
+                <a href="##">
+                    <li>NaN</li>
+                </a>
+                <a href="##">
+                    <li>NoAny</li>
+                </a>
+            </ul>
+        </aside>
         <div style="width: auto; height: auto;overflow: auto;" class="tiezi white bs flex column br">
             <h1 class="black tiezi_title">Hello World!</h1><time class="bblack tiezi_title">2022.6.29 14:40 第2次修改</time>
             <p style="font-size: 24px" class="wb ma8 black">
