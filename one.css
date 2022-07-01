@@ -225,8 +225,8 @@ ul>li {
 
 aside {
     /*侧边栏,初始位置为-200px，即隐藏效果*/
-    /* backdrop-filter: blur(4px); */
-    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.6);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -252,7 +252,9 @@ h2 {
 
 /*控制侧边栏进出的按钮（外部包裹）*/
 #wrap {
-    margin-left: 20px;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.4);
+    margin-left: 1px;
     padding: 10px;
     transition: 0.3s ease-out;
 
