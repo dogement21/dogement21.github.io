@@ -24,14 +24,14 @@
             width: 3em;
             height: 3em;
             background: rgb(255, 255, 255);
-            transition: 10s ease-in-out;
+            transition: 3s linear;
             margin: 0;
             padding: 0;
         }
 
         td:hover:not(.nonetd) {
             transition: none;
-            border: 2px solid rgb(255, 255, 255);
+            border: 2px solid #eee;
             background: #06266F;
             color: #e6e8ee;
             opacity: 100%;
@@ -57,7 +57,9 @@
         <label id='wrap' class="top-nav" for='sidemenu'>≡</label>
     </div>
     <!-- 底部内容区 -->
-    <div class="flex column self-center bs" id="NeiRong">
+    <div class="flex column self-center" style="
+    margin-top: 25px;
+    background-color: none;">
         <input type='checkbox' id='sidemenu'>
         <aside class="top-nav">
             <h2>主菜单</h2>
